@@ -1,5 +1,6 @@
 # codeigniter-image-moo + upload + delete
-The CI library for image manipulation
+The CI library for image manipulation<br>
+[http://www.matmoo.com/digital-dribble/codeigniter/image_moo/](http://www.matmoo.com/digital-dribble/codeigniter/image_moo/)
 
 
 ## Start
