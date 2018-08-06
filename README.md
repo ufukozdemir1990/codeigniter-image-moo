@@ -1,5 +1,6 @@
 # codeigniter-image-moo + upload + delete
-The CI library for image manipulation<br>
+The CI library for image manipulation <br>
+The Codeigniter latest is Version 3.1.9 <br>
 [http://www.matmoo.com/digital-dribble/codeigniter/image_moo/](http://www.matmoo.com/digital-dribble/codeigniter/image_moo/)
 
 
