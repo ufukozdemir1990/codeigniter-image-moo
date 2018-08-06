@@ -61,10 +61,10 @@
 				->save_pa($prepend = '', $append = '-'.$x.'x'.$y, $overwrite = TRUE);
 		}
 
-		public function find_image_thumb($image_name, $olcu) {
+		public function find_image_thumb($image_name, $size) {
 	        $pathinfo           = pathinfo($image_name);
 	        $ext             	= $pathinfo["extension"];
 	        $path_lenght    	= strlen($ext) +1;
-	        return substr($image_name, 0, -$path_lenght).'-'.$olcu.'.'.$ext;
+	        return substr($image_name, 0, -$path_lenght).'-'.$size.'.'.$ext;
 	    }
 	}
