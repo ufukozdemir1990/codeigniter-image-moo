@@ -13,4 +13,14 @@ The Codeigniter latest is Version 3.1.9 <br>
 
 
 ### image-moo usage
-`$this->image_size('upload/test-name.jpg', 500, 300);`
+```php
+public function image_size($image, $x, $y){
+    $this->image_moo
+        ->load($image)
+        ->resize_crop($x, $y)
+        ->save_pa($prepend = '', $append = '-'.$x.'x'.$y, $overwrite = TRUE);
+}
+```
+```php
+$this->image_size('upload/test-name.jpg', 500, 300);`
+```
