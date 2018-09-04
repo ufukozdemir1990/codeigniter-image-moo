@@ -36,8 +36,8 @@ class Upload extends CI_Controller {
 
             $image_thumb = $this->find_image_thumb($this->input->get('image_delete'), '500x300');
 
-            $path  = str_replace('index.php', '', $_SERVER['DOCUMENT_ROOT'].$_SERVER['SCRIPT_NAME'].'/upload/'.$this->input->get('image_delete'));
-            $path2 = str_replace('index.php', '', $_SERVER['DOCUMENT_ROOT'].$_SERVER['SCRIPT_NAME'].'/upload/'.$image_thumb);
+            $path  = FCPATH.'upload/'.$this->input->get('image_delete');
+            $path2 = FCPATH.'upload/'.$image_thumb;
 
             if (file_exists($path)) {
                 if (unlink($path) && unlink($path2)) {
